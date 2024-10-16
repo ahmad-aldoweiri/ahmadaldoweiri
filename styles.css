@@ -1,0 +1,158 @@
+/* تنسيق أساسي */
+body {
+    background-color: #f4f4f9;
+    font-family: 'Roboto', sans-serif;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+header, section, footer {
+    padding: 20px;
+    text-align: center;
+}
+
+h1, h2 {
+    color: #333;
+}
+
+.profile-pic {
+    width: 350px;
+    height: 350px;
+    border-radius: 50%;
+    border: 5px solid #FDF5E6;
+    margin: 20px auto;
+    display: block;
+}
+
+/* قسم السيرة الذاتية */
+.bio-section {
+    background-color: #6B8E23;
+    padding: 15px;
+    border-radius: 10px;
+    font-size: 18px;
+    line-height: 1.6;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    margin-top: 20px;
+}
+
+/* قسم المهارات الشخصية */
+.skills-section {
+    margin: 30px auto;
+    background-color: #90EE90;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 250px;
+}
+
+.skills-section ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.skills-section li {
+    margin-bottom: 10px;
+    color: #2C3E50;
+}
+
+/* جدول لغات البرمجة */
+table {
+    width: 80%;
+    margin: 20px auto;
+    border-collapse: collapse;
+}
+
+th, td {
+    padding: 12px;
+    border: 1px solid #ddd;
+}
+
+th {
+    background-color: #6B8E23;
+    color: white;
+}
+
+a {
+    color: #FFD700;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* زر اختيار اللغة */
+.language-switch {
+    position: fixed;
+    top: 10px;
+    right: 10px;
+}
+
+.language-switch button {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-right: 5px;
+}
+
+.language-switch button:hover {
+    background-color: #45a049;
+}
+
+body[lang="ar"] .language-switch {
+    right: unset;
+    left: 10px;
+}
+
+/* قسم التواصل الاجتماعي */
+.social-box {
+    background-color: #FFFAF0;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 220px;
+    margin: 30px auto;
+}
+
+.social-box ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.social-box li {
+    margin-bottom: 10px;
+    font-size: 16px;
+    color: #2C3E50;
+}
+
+.social-box a {
+    color: #2C3E50;
+    text-decoration: none;
+}
+
+.social-box a:hover {
+    text-decoration: underline;
+}
+
+.social-box i {
+    margin-right: 8px;
+}
+
+/* الفوتر */
+footer {
+    background-color: #333;
+    color: white;
+    padding: 20px;
+}
+
+footer a {
+    color: #FFD700;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}

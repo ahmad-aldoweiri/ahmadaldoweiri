@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ahmed Al-Doweiri - Home Page</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+ 
+    <div class="language-switch">
+        <button onclick="changeLanguage('en')">English</button>
+        <button onclick="changeLanguage('ar')">العربية</button>
+    </div>
+
+ 
+    <header>
+        <div class="profile-section">
+            <img src="aa.jpeg" alt="Your Photo" class="profile-pic">
+            <h1 id="header-title">Hello, I am Ahmed Al-Doweiri</h1>
+            <p id="major">Cybersecurity - 157300</p>
+            <p id="bio" class="bio-section">Hello, I am Ahmed Al-Doweiri. <br> I am 21 years old and currently studying cybersecurity at the Jordan University of Science and Technology (fourth year).<br> If you want to know more about me, feel free to scroll down (contact me).</p>
+        </div>
+    </header>
+
+
+    <aside class="skills-section">
+        <h2 id="skills-title">My Personal Skills</h2>
+        <ul>
+            <li>Critical Thinking</li>
+            <li>Problem Solving</li>
+            <li>Teamwork</li>
+			<li>Time Management</li>
+			<li>Collaboration </li>
+			<li>Attention to Detail</li>
+        </ul>
+    </aside>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Social Box</title>
+ 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  
+</head>
+
+    <aside class="social-box">
+        <h2>Find me on</h2>
+        <ul>
+            <li><i class="fab fa-facebook"></i> <a href="https://www.facebook.com/profile.php?id=100009160460820&mibextid=LQQJ4d" target="_blank">Facebook</a></li>
+            <li><i class="fab fa-instagram"></i> <a href="https://www.instagram.com/ahmad_al_dwiri/profilecard/?igsh=MXR0N2kxdGpqNDNlOA==" target="_blank">Instagram</a></li>
+            <li><i class="fas fa-envelope"></i> <a href="mailto:ahmdaldwyry212@gmail.com?">Gmail</a></li>
+        </ul>
+    </aside>
+
+   
+    <section class="languages-section">
+        <h2 id="programming-title">Favorite Programming Languages</h2>
+        <table>
+            <tr>
+                <th>Language</th>
+                <th>More Info</th>
+            </tr>
+            <tr>
+                <td>Python</td>
+                <td><a href="https://www.python.org/" target="_blank">Click here</a></td>
+            </tr>
+            <tr>
+                <td>JavaScript</td>
+                <td><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="_blank">Click here</a></td>
+            </tr>
+			<tr>
+                <td>C++</td>
+                <td><a href="https://www.w3schools.com/cpp/" target="_blank">Click here</a></td>
+            </tr>
+			<tr>
+                <td>assemply</td>
+                <td><a href="https://en.wikipedia.org/wiki/Assembly_language" target="_blank">Click here</a></td>
+            </tr>
+        </table>
+    </section>
+
+    
+    <footer>
+        <a href="index2.html" id="contact-link">Contact Me</a>
+    </footer>
+
+    
+    <script>
+        function changeLanguage(lang) {
+            document.documentElement.lang = lang;
+            if (lang === 'ar') {
+                document.body.style.direction = 'rtl';
+                document.getElementById('header-title').textContent = "مرحبًا، أنا أحمد الدويري";
+                document.getElementById('major').textContent = "157300-الأمن السيبراني";
+                document.getElementById('bio').innerHTML = "مرحبا، أنا أحمد الدويري. <br> عمري 21 سنة وأدرس تخصص الأمن السيبراني في جامعة العلوم والتكنولوجيا الأردنية (سنة رابعة).<br> إذا كنت تريد معرفة المزيد عني، لا تتردد في التمرير لأسفل (الاتصال بي).";
+                document.getElementById('skills-title').textContent = "مهاراتي الشخصية";
+                document.getElementById('programming-title').textContent = "لغات البرمجة المفضلة";
+                document.getElementById('contact-link').textContent = "اتصل بي";
+            } else {
+                document.body.style.direction = 'ltr';
+                document.getElementById('header-title').textContent = "Hello, I am Ahmed Al-Doweiri";
+                document.getElementById('major').textContent = "Cybersecurity - 157300";
+                document.getElementById('bio').innerHTML = "Hello, I am Ahmed Al-Doweiri. <br> I am 21 years old and currently studying cybersecurity at the Jordan University of Science and Technology (fourth year).<br> If you want to know more about me, feel free to scroll down (contact me).";
+                document.getElementById('skills-title').textContent = "My Personal Skills";
+                document.getElementById('programming-title').textContent = "Favorite Programming Languages";
+                document.getElementById('contact-link').textContent = "Contact Me";
+            }
+        }
+    </script>
+
+</body>
+</html>
